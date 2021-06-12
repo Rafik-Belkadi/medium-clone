@@ -1,4 +1,119 @@
-.main {
-  min-height: 100vh;
-  overflow: hidden;
+.navbar {
+  display: flex;
+  width: 100vw;
+  justify-content: space-around;
+  border-bottom: 1px solid black;
+  background-color: #FFBB00;
+  height: 50px;
+  align-items: center;
+  font-family: medium-content-sans-serif-font;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+}
+
+.right p,
+.right button {
+  margin-left: 20px
+}
+
+.right button {
+  padding: 12px 20px;
+  border-radius: 50px;
+  background: #333;
+  color: white;
+  border: none;
+}
+
+.back {
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+  border-bottom: 1px solid black;
+  background-color: #FFBB00;
+  height: 60vh;
+  align-items: center;
+}
+
+.middle {
+  flex-direction: row;
+  display: flex;
+  width: 100vw;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+h1 {
+  margin: 0
+}
+
+.Title {
+  width: 550px;
+  height: 100%;
+  flex-direction: column;
+  display: flex;
+  padding-top: 33px;
+  padding-bottom: 51px;
+  font-size: xx-large;
+  font-family: medium-content-sans-serif-font;
+  font-style: normal;
+  font-weight: 400;
+}
+
+a,
+a:active,
+a:active {
+  color: black
+}
+
+.subtitle {
+  flex-direction: row;
+  display: flex;
+}
+
+.Learn {
+  text-decoration: underline;
+  margin-left: 10px
+}
+
+.Get {
+  border-radius: 50px;
+  background: #FFBB00;
+  color: black;
+  font-size: large;
+  border-color: black;
+  padding: 15px 45px;
+}
+
+.Image {
+  
+  width: 500px;
+  height: 500px;
+  background: url("https://www.transparentpng.com/thumb/black-hole/black-hole-png-2.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.Article {
+  width: 1000px;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-family: medium-content-sans-serif-font;
+  margin-left: 10%;
+  margin-top: 40px;
+}
+.Text {
+
+}
+.Picture {
+  width: 400px;
+  height: 200px;
+  background: url("https://images.pexels.com/photos/7473035/pexels-photo-7473035.jpeg?cs=srgb&dl=pexels-esrageziyor-7473035.jpg&fm=jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }

@@ -1,43 +1,22 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-import AppBar from '@material-ui/core/AppBar';
-import Toolbar from '@material-ui/core/Toolbar';
-import Typography from '@material-ui/core/Typography';
-import Button from '@material-ui/core/Button';
-import IconButton from '@material-ui/core/IconButton';
-import PanierDialog from './PanierDialog'
 
-// import MenuIcon from '@material-ui/icons/Menu';
-
-const useStyles = makeStyles((theme) => ({
-    root: {
-        flexGrow: 1,
-    },
-    menuButton: {
-        marginRight: theme.spacing(2),
-    },
-    title: {
-        flexGrow: 1,
-    },
-}));
-
-export default function ButtonAppBar(props) {
-    const classes = useStyles();
-
+const NavBar = () => {
     return (
-        <div className={classes.root}>
-            <AppBar position="static">
-                <Toolbar>
-                    <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
-                        {/* <MenuIcon /> */}
-                    </IconButton>
-                    <Typography variant="h6" className={classes.title}>
-                        News
-          </Typography>
-                    <PanierDialog deleteFromCart={props.deleteFromCart} myCart={props.myCart} />
+        <div className="navbar">
+            <div className='left'>
+                <h1>Medium</h1>
+            </div>
 
-                </Toolbar>
-            </AppBar>
+            <div className='right'>
+                <p>Our Story</p>
+                <p>Membership</p>
+                <p>Write</p>
+                <p>Sign In</p>
+                <button>Get Started</button>
+            </div>
+    
         </div>
     );
 }
+
+export default NavBar;
